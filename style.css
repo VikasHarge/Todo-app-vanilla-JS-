@@ -1,0 +1,86 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    font-size: 40px;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#todo_text{
+    width: 50%;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+#addButton{
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 6px ;
+    border: 1px solid rgb(182, 0, 173);
+    background-color: rgb(182, 0, 173);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#todo_container{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.todoDiv{
+    width: 100%;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: space-around; */
+    justify-content: space-between;
+    border: 1px solid lawngreen;
+    border-radius: 6px;
+    margin: 6px 0px;
+}
+
+.srNo, .todotext{
+    margin: 0px;
+}
+
+.actionDiv{
+    width: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.actionDiv > button {
+    margin-left: 6px;
+    border-radius: 6px ;
+    border: none;
+    background-color: rgb(4, 0, 255);
+    color: white;
+    font-weight: 600;
+    padding: 6px 6px;
+}
+.doneTask:hover {
+    background-color: rgb(0, 182, 45);
+    cursor: pointer;
+}
+.deleteTask:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
